@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body
+        {
+            font-family: 'Comic Sans MS', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow: hidden;
+        }
+        .animated-background
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            animation: animatedBackground 5s linear infinite;
+            background-image: url('bg1.jpg');
+            background-size: cover;
+        }
+
+        @keyframes animatedBackground
+        {
+            from
+            {
+                background-position: 0 0;
+            }
+            to
+            {
+                background-position: 100% 100%;
+            }
+        }
+
+        .login-container
+        {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container h1
+        {
+            background-color: rgba(300, 300, 300, 0.2);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .input-field
+        {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ff1493;
+            border-radius: 4px;
+            color: #ff69b4;
+        }
+
+        .login-button
+        {
+            width: 90%;
+            padding: 12px;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 4px;
+            color: pink;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-button:hover
+        {
+            background-color: #ff1493;
+        }
+
+        .options
+        {
+            margin-top: 20px;
+        }
+
+        .options a
+        {
+            color: #ff69b4;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-background"></div>
+    <div class="login-container">
+        <h1>Login</h1>
+         <form action="dashboard.html">
+            <input type="text" class="input-field" placeholder="Email or Phone">
+            <br>
+            <input type="password" class="input-field" placeholder="Password">
+
+            <div class="options">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember Me</label>
+                <a href="#" style="margin-left: 50px;">Forgot Password?</a>
+            </div>
+            <br>
+            <button type="submit" class="login-button">Log In</button>
+            <div class="options">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

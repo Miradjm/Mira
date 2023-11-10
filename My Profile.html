@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body
+        {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .animated-background
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            animation: animatedBackground 5s linear infinite;
+            background-image: url('bg5.jpg');
+            background-size: contain;
+        }
+
+        @keyframes animatedBackground
+        {
+            from
+            {
+                background-position: 0 0;
+            }
+            to
+            {
+                background-position: 100% 100%;
+            }
+        }
+
+        .container
+        {
+        	background-color: lavender;
+		    padding: 20px;
+		    border-radius: 8px;
+		    box-shadow: 0 4px 8px rgba(5, 20, 0, 0.1);
+		    text-align: center;
+		    color: pink; /* Added color */
+		}
+		.container:hover
+		{
+			background-color: black;
+        }
+
+		.container h1
+		{
+		    background-color: rgba(255, 182, 193, 0.6);
+		    padding: 10px;
+		    border-radius: 8px;
+		    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		    text-align: center;
+		    color: black; /* Added color */
+		    font-weight: bold;
+        }
+        .container p
+        {
+        	background-color: rgba(255, 182, 193, 0.6);
+			padding: 10px;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			text-align: center;
+			color: black; /* Added color */
+        }
+
+        img.profile-picture
+        {
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 4px solid black;
+        }
+
+        h1
+        {
+            color: violet;
+            margin-top: 20px;
+        }
+
+        p
+        {
+            color: violet;
+            line-height: 1.6;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .social-media-icons
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-media-icons a
+        {
+            margin: 0 10px;
+        }
+
+        .social-media-icons img
+        {
+            border-radius: 50%;
+            border: 2px solid black;
+            transition: transform 0.3s;
+        }
+
+        .social-media-icons img:hover
+        {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animated-background"></div>
+    <div class="container">
+        <img class="profile-picture" src="MIRA3.jpg" alt="My Profile Picture" width="200" height="200">
+        <h1>Miraflor A. Dejamo</h1>
+        <p>
+            Hi there! I'm a happy soul who loves to explore and share my passion for technology, arts, and literature!
+        </p>
+        <p>Let's connect on social media:</p>
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/mirangg.14" target="_blank"><img src="facebook.jpg" alt="Facebook" width="50"
+                    height="50"></a>
+            <a href="https://www.instagram.com/_miradjm/" target="_blank"><img src="instagram.jpg" alt="Instagram" width="50"
+                    height="50"></a>
+            <a href="https://www.tiktok.com/@mira_djm" target="_blank"><img src="tiktok.jpg" alt="TikTok" width="50"
+                    height="50"></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="gmail.jpg" alt="Gmail" width="50"
+                    height="50"></a>
+        </div>
+    </div>
+</body>
+
+</html>
